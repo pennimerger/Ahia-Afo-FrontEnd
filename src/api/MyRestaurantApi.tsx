@@ -4,6 +4,7 @@ import { useMutation, useQuery } from "react-query"
 import { toast } from "sonner"
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
+console.log(API_BASE_URL)
 
 export const useGetMyRestaurant = () => {
   const { getAccessTokenSilently } = useAuth0()
@@ -47,7 +48,7 @@ export const useCreateMyRestaurant = () => {
       },
       body: restaurantFormData,
     })
-
+    console.log(response.json())
     if (!response.ok) {
       throw new Error("Failed to create restaurant")
     }
@@ -67,7 +68,7 @@ export const useCreateMyRestaurant = () => {
   }
 
   if (error) {
-    toast.error("Unable to update restaurant")
+    toast.error("Unable to create restaurant")
   }
 
   return { createRestaurant, isLoading }
