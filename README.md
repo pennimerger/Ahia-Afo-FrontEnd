@@ -22,7 +22,7 @@ Follow these steps to get the project up and running on your local machine:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/pennimerger/Portfolio.git
+git clone https://github.com/pennimerger/Ahia-Afo-Frontend.git
 cd Ahia-Afo-Frontend
 ```
 
@@ -45,7 +45,7 @@ Feel free to customize the application by editing the following files:
 
 - **src/components/:** React components and UI elements.
 - **src/pages/:** Content and layout for different pages.
-- **public | src/assets/:** Media used in the portfolio.
+- **public | src/assets/:** Media used in the application.
 - **src/App.css/:** Tailwind and custom css styles.
 
 ## Contributing
